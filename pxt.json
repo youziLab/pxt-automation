@@ -2,6 +2,9 @@
     "name": "automation",
     "version": "0.0.3",
     "description": "Automation, Process Control, Systems and Controls",
+    "dependencies": {
+        "core": "*"
+    },
     "files": [
         "README.md",
         "ns.ts",
@@ -10,9 +13,6 @@
     ],
     "testFiles": [],
     "public": true,
-    "dependencies": {
-        "core": "*"
-    },
     "targetVersions": {
         "target": "7.0.57",
         "targetId": "microbit"

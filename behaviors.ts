@@ -41,14 +41,14 @@ namespace automation {
     export class BehaviorManager {
         private _behaviors: Behavior[];
         private _state: BehaviorManagerState;
-        private _timer: control.Timer;
+        // private _timer: control.Timer;
 
         public timestep: number;
 
         constructor() {
             this._behaviors = [];
             this._state = BehaviorManagerState.Stopped;
-            this._timer = new control.Timer();
+            // this._timer = new control.Timer();
             this.timestep = 20;
         }
 
@@ -106,9 +106,9 @@ namespace automation {
                 }
 
                 // give a breather to the events
-                this._timer.pauseUntil(this.timestep);
-                elapsed = this._timer.millis();
-                this._timer.reset();
+                // this._timer.pauseUntil(this.timestep);
+                // elapsed = this._timer.millis();
+                // this._timer.reset();
             }
 
             // tell manager that we are done
